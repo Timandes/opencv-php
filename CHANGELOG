@@ -1,0 +1,15 @@
+OpenCV Extension ChangeLog
+
+
+Version 0.1.0
+-------------
+
+    Functions:
+    * opencv_imread()
+    * opencv_imwrite()
+    * opencv_rectangle()
+    * opencv_inpaint()
+    * opencv_mat_zeros()
+    * opencv_mat_rows()
+    * opencv_mat_cols()
+    * opencv_mat_dump()
