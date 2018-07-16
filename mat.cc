@@ -199,6 +199,10 @@ PHP_FUNCTION(opencv_rectangle)
 
 	PHP_OPENCV_FETCH_MAT_RES(mat_p, z_mat_p);
 
+	cv_pt1 = php_opencv_array_2_point("pt1", z_pt1_p);
+	cv_pt2 = php_opencv_array_2_point("pt2", z_pt2_p);
+	cv_color = php_opencv_array_2_scalar("color", z_color_p);
+
 	try {
 		// Inner matrix will be changed
 		cv::rectangle(*(mat_p->cv_mat_p), cv_pt1, cv_pt2, cv_color, (int)thickness, (int)line_type);
